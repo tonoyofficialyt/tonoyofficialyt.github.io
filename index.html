@@ -47,6 +47,10 @@ footer{padding:30px 0;color:var(--muted);text-align:center;border-top:1px solid 
 .video-note{margin:18px 0 0;padding:14px 16px;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:13px;background:#111019}
 .video-card[hidden]{display:none}
 @media(max-width:720px){.video-grid{grid-template-columns:1fr}.video-card{padding:18px}}
+
+.youtube-playlist{width:100%;margin-top:16px;flex-basis:100%}
+.video-card[data-platform="youtube"]{flex-wrap:wrap}
+.youtube-playlist iframe{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:12px;background:#000}
 </style>
 </head>
 <body><div class="wrap">
@@ -69,7 +73,12 @@ footer{padding:30px 0;color:var(--muted);text-align:center;border-top:1px solid 
 </div>
 <div class="video-grid">
 <article class="video-card" data-platform="youtube">
-<div class="video-icon youtube-icon">▶</div><div><h3>YouTube Videos</h3><p>Watch my Shorts and full videos on YouTube.</p><a class="video-link" href="https://youtube.com/@123_tonoy" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
+<div class="video-icon youtube-icon">▶</div><div><h3>YouTube Videos</h3><p>Watch my Shorts and full videos on YouTube.</p><a class="video-link" href="https://youtube.com/@123_tonoy" target="_blank" rel="noopener">Watch on YouTube ↗</a></div><div class="youtube-playlist">
+<iframe src="https://www.youtube.com/embed/videoseries?list=UULpQdCEB1ks-9S3scwT9crg"
+title="Tonoy YouTube videos and Shorts" loading="lazy"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen></iframe>
+</div>
 </article>
 <article class="video-card" data-platform="tiktok">
 <div class="video-icon tiktok-icon">♪</div><div><h3>TikTok Videos</h3><p>Explore my TikTok videos and short clips.</p><a class="video-link" href="https://www.tiktok.com/@123_tonoy" target="_blank" rel="noopener">Watch on TikTok ↗</a></div>
