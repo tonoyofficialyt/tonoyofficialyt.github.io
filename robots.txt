@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tonoyofficialyt.github.io/sitemap.xml
